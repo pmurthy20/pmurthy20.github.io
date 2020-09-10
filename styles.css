@@ -8,29 +8,22 @@
     src: url(Raleway.ttf);
 }
 
-
-
 html {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);;
 }
 
 body, a {
-
-
     text-decoration: none;
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-
     letter-spacing: 1px;
     text-align: center;
     align-items: center;
     width: 70%;
     padding-left: 3%;
-
 }
 
 .navbar a {
@@ -39,11 +32,8 @@ body, a {
     text-decoration: none;
     font-size: 25px;
     text-align: center;
-    /* padding-right: 30%; */
-
     padding-top: 3%;
     padding-bottom: 2%;
-
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
@@ -53,7 +43,6 @@ body, a {
 
 .navbar a:hover {
     animation: fadeIn_Navbar_underline ease .3s; 
-
     animation-fill-mode: forwards; 
 }
 
@@ -106,7 +95,6 @@ body, a {
 .text, .text-p-1 {
     font-family: Raleway, Arial, sans-serif;
     animation: fadeIn_bodytext ease 1s; 
-
     animation-fill-mode: forwards; 
 }
 
@@ -117,7 +105,6 @@ body, a {
     margin-bottom: 100px;
     background-color: #E0E0E0;
     border-bottom: 3px solid #212121;
-
 }
 
 #footer ul {
@@ -128,9 +115,9 @@ body, a {
 }
 
 #footer li {
-
     font-size: 25px;
 } */
+
 @keyframes fadeIn_Navbar_underline { 
     0% { 
         border-bottom: 2px solid rgba(255, 255, 255, 0);
