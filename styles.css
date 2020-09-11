@@ -131,8 +131,7 @@ body, a {
 
 .element-wide {
     background-image: url(blur-code.png);
-    width: 100%;
-    height: 10%;
+
 
 }
 
@@ -140,8 +139,21 @@ body, a {
     /* background-color: rgba(255, 255, 255, 1); */
     height: auto;
     width: auto;
+    display: flex;
+    justify-content: center;
     padding: 2%;
 
+}
+
+.element-wide-content img {
+    height: 15%;
+    width: 15%;
+
+}
+
+.element-wide-content img:hover {
+    animation: fadeIn_Navbar_underline ease .3s; 
+    animation-fill-mode: forwards; 
 }
 
 
@@ -161,4 +173,8 @@ body, a {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes slide_left {
+    100% { left: 0; }
 }
