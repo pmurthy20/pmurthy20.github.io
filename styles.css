@@ -131,8 +131,8 @@ body, a {
 
 .element-wide {
     background-image: url(blur-code.png);
-
-
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
 }
 
 .element-wide-content {
@@ -148,12 +148,23 @@ body, a {
 .element-wide-content img {
     height: 15%;
     width: 15%;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
 
 }
 
-.element-wide-content img:hover {
-    animation: fadeIn_Navbar_underline ease .3s; 
-    animation-fill-mode: forwards; 
+.element-wide-content:hover img {
+    /* animation: fadeIn_Navbar_underline ease .3s; 
+    animation-fill-mode: forwards;  */
+    /* animation: slide_left ease 1s;
+    animation-fill-mode: both;   */
+    transform: translateX(-275%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.element-wide:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -176,5 +187,7 @@ body, a {
 }
 
 @keyframes slide_left {
-    100% { left: 0; }
+    0% { transform: translate(0%);}
+    
+    100% { transform: translate(-250%); }
 }
