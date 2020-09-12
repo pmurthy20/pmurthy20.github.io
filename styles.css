@@ -74,7 +74,7 @@ body, a {
     line-height: 1.6;
 }
 
-.header {
+.header , h1 {
     padding-top: 1%;
     padding-right: 8%;
     font-family: KumbhSans, Arial, sans-serif;
@@ -143,11 +143,14 @@ body, a {
     justify-content: center;
     padding: 2%;
 
+
 }
 
 .element-wide-content img {
     height: 15%;
     width: 15%;
+
+    z-index: 100;
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out;
 
@@ -158,8 +161,11 @@ body, a {
     animation-fill-mode: forwards;  */
     /* animation: slide_left ease 1s;
     animation-fill-mode: both;   */
+
+
     transform: translateX(-275%);
     transition: transform 0.2s ease-in-out;
+
 }
 
 .element-wide:hover {
@@ -167,6 +173,29 @@ body, a {
     transition: transform 0.3s ease-in-out;
 }
 
+.element-wide-content h1 {
+    color: white;
+    position: absolute;
+    z-index: 0;
+    padding: 0;
+    margin-top: 5%;
+    font-size: 4vw;
+    font-style: italic;
+    padding-bottom: 1%;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.element-wide-content a {
+    color: white;
+}
+
+.element-wide-content:hover h1 {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
 
 @keyframes fadeIn_Navbar_underline { 
     0% { 
@@ -186,8 +215,20 @@ body, a {
     }
 }
 
-@keyframes slide_left {
+@keyframes text_fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Unused - replaced with transitions */
+/* @keyframes slide_left {
     0% { transform: translate(0%);}
     
     100% { transform: translate(-250%); }
-}
+} */
+
