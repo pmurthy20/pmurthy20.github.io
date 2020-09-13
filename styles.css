@@ -54,13 +54,35 @@ body, a {
 }
 
 #picture {
-    padding-left: 15%;
+    /* padding-left: 15%; */
+    margin-left: 15%;
     padding-top: 4.5%;
     margin-right: 13%;
     height: 500px;
     float: left;
+    
 }
 
+
+@media (min-width:743px) and (max-width: 1919px) {
+    #picture {
+        height: 800px; 
+    }
+}
+
+@media (max-width:742px) {
+    #picture {
+        height: 500px;
+        width: 100%;
+        margin-left: 5vw;
+    }
+    #main {
+        display: block; 
+    }
+    .header, .text, .text-p-1 {
+        padding-left: 8%;
+    }
+}
 #headshot {
     height: 400px;
     width: 400px;
@@ -76,7 +98,7 @@ body, a {
 
 .header , h1 {
     padding-top: 1%;
-    padding-right: 8%;
+    padding-right: 3.5%;
     font-family: KumbhSans, Arial, sans-serif;
 }
 
@@ -87,7 +109,7 @@ body, a {
 }
 
 .text-p-1 {
-    padding-top: 1%;
+    /* padding-top: 1%; */
     padding-right: 8%;
     font-size: 15px;
 }
@@ -97,6 +119,8 @@ body, a {
     animation: fadeIn_bodytext ease 1s; 
     animation-fill-mode: forwards; 
 }
+
+
 
 /* #footer {
     clear: both;
@@ -129,11 +153,28 @@ body, a {
     
 }
 
-.element-wide {
+.element-wide-portfolio {
     background-image: url(blur-code.png);
     transform: scale(1.0);
     transition: transform 0.3s ease-in-out;
 }
+.element-wide-portfolio:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.element-wide-test {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+.element-wide-test:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
 
 .element-wide-content {
     /* background-color: rgba(255, 255, 255, 1); */
@@ -142,35 +183,19 @@ body, a {
     display: flex;
     justify-content: center;
     padding: 2%;
-
-
 }
 
 .element-wide-content img {
     height: 15%;
     width: 15%;
-
     z-index: 100;
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out;
-
 }
 
 .element-wide-content:hover img {
-    /* animation: fadeIn_Navbar_underline ease .3s; 
-    animation-fill-mode: forwards;  */
-    /* animation: slide_left ease 1s;
-    animation-fill-mode: both;   */
-
-
     transform: translateX(-275%);
     transition: transform 0.2s ease-in-out;
-
-}
-
-.element-wide:hover {
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in-out;
 }
 
 .element-wide-content h1 {
@@ -196,6 +221,28 @@ body, a {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
+
+.element-half-width {
+    background-color: rgba(255, 255, 255, 1);
+    height: 200px;
+    width: 50%;
+}
+
+.element-half-width-test {
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    width: 50%;
+    margin: 0;
+}
+
+
+.element-half-width-content {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
 
 @keyframes fadeIn_Navbar_underline { 
     0% { 
