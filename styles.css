@@ -30,7 +30,6 @@ body, a {
     .navbar {
         width: 100%;
         padding-left: 0;
-
     }
 }
 
@@ -58,18 +57,12 @@ body, a {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* padding-top: 3%; */
     color: rgba(255, 255, 255, 1);
-    /* height: 600px; */
-    /* padding-top: 3%;
-    color: white; */
 }
 
 #picture {
     height: 30vw;
     width: 30vw;
-    /* padding-left: 5%; */
-    /* padding-right: 10%; */
     margin: auto;
 }
 
@@ -94,12 +87,11 @@ body, a {
         font-size: calc(16px + .5vw);
     }
 } 
+
 @media (max-width: 1023px) {
     #content {
         display: block;
         margin-top: 5%;
-        /* padding-left: 50vw; */
-        
     }
     
     #picture {
@@ -117,6 +109,7 @@ body, a {
         font-size: calc(16px + .05vw);
         margin: auto;
     }
+
     #content {
         padding-top: 1.5%;
     }
@@ -131,52 +124,23 @@ body, a {
 
 .header , h1 {
     padding-top: 1%;
-    /* padding-right: 3.5%; */
     font-family: KumbhSans, Arial, sans-serif;
 }
 
 .text {
     padding-top: 10%;
-    /* padding-right: 8%; */
-    /* font-size: 15px; */
 }
 
 .text-p-end {
     padding-bottom: 10%;
     padding-top: 10%;
-    /* padding-top: 1%; */
-    /* padding-right: 8%; */
-    /* font-size: 15px; */
 }
 
 .text, .text-p-1, .text-p-end {
-
     font-family: Raleway, Arial, sans-serif;
     animation: fadeIn_bodytext ease 1s; 
     animation-fill-mode: forwards; 
 }
-
-
-
-/* #footer {
-    clear: both;
-    padding-right: 30%;
-    padding-left: 30%;
-    margin-bottom: 100px;
-    background-color: #E0E0E0;
-    border-bottom: 3px solid #212121;
-}
-
-#footer ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    color: black;
-}
-
-#footer li {
-    font-size: 25px;
-} */
 
 #grid-container {
     background: rgba(0, 0, 0, 0.2);
@@ -185,8 +149,6 @@ body, a {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
-
-    
 }
 
 .element-wide-portfolio {
@@ -209,11 +171,7 @@ body, a {
     transition: transform 0.3s ease-in-out;
 }
 
-
-
-
 .element-wide-content {
-    /* background-color: rgba(255, 255, 255, 1); */
     height: auto;
     width: auto;
     display: flex;
@@ -278,8 +236,6 @@ body, a {
     padding: 2%;
 }
 
-
-
 @keyframes fadeIn_Navbar_underline { 
     0% { 
         border-bottom: 2px solid rgba(255, 255, 255, 0);
@@ -306,7 +262,6 @@ body, a {
         opacity: 1;
     }
 }
-
 
 /* Unused - replaced with transitions */
 /* @keyframes slide_left {
