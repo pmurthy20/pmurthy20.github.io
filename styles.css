@@ -26,6 +26,14 @@ body, a {
     padding-left: 3%;
 }
 
+@media (max-width: 425px) {
+    .navbar {
+        width: 100%;
+        padding-left: 0;
+
+    }
+}
+
 .navbar a {
     color: white;
     font-family: KumbhSans, Arial, sans-serif;
